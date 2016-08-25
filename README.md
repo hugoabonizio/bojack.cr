@@ -1,6 +1,6 @@
-# bojack
+# BoJack client
 
-TODO: Write a description here
+A Crystal shard client for [BoJack](https://github.com/marceloboeira/bojack) key-value store.
 
 ## Installation
 
@@ -10,7 +10,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   bojack:
-    github: [your-github-name]/bojack
+    github: hugoabonizio/bojack.cr
 ```
 
 
@@ -18,11 +18,12 @@ dependencies:
 
 
 ```crystal
-require "bojack"
+require "bojack-client"
+
+client = BoJack::Client.new
+client.set("foo", "bar")
+puts client.get("foo")
 ```
-
-
-TODO: Write usage instructions here
 
 ## Development
 
@@ -30,7 +31,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/bojack/fork )
+1. Fork it ( https://github.com/hugoabonizio/bojack/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -38,4 +39,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Hugo Abonizio - creator, maintainer
+- [hugoabonizio](https://github.com/hugoabonizio) Hugo Abonizio - creator, maintainer
