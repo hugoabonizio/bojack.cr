@@ -1,5 +1,5 @@
 require "../spec_helper"
-require "../../src/bojack/client"
+require "../../src/bojack-client"
 
 describe BoJack::Client do
   hostname = "127.0.0.1"
