@@ -1,4 +1,4 @@
-# BoJack client
+# BoJack client [![Build Status](https://travis-ci.org/hugoabonizio/bojack.cr.svg?branch=master)](https://travis-ci.org/hugoabonizio/bojack.cr)
 
 A Crystal shard client for [BoJack](https://github.com/marceloboeira/bojack) key-value store.
 
