@@ -1,4 +1,5 @@
 require "socket"
+require "./version"
 
 module BoJack
   class Client
